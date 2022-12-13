@@ -28,3 +28,13 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+p {
+  text-align: center;
+}
+li {
+  list-style: none;
+  text-align: center;
+}
+</style>
