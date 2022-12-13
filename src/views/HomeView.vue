@@ -30,11 +30,20 @@ export default {
 </script>
 
 <style scoped>
-p {
-  text-align: center;
+ul {
+  margin: 0;
+  padding: 0;
 }
 li {
   list-style: none;
-  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+li a {
+  color: "#999";
+  text-decoration: none;
+  width: 100%;
+  display: block;
 }
 </style>
