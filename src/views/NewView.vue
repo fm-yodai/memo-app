@@ -1,5 +1,8 @@
 <template>
-  <MemoForm />
+  <div>
+    Add memo
+    <MemoForm />
+  </div>
 </template>
 
 <script>
