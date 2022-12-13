@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div><input type="text"></div>
-    <div><textarea></textarea></div>
+    <div><input type="text" v-model="title"></div>
+    <div><textarea v-model="content"></textarea></div>
     <div class="center">
       <button>save</button>
     </div>
