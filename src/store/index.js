@@ -9,6 +9,9 @@ export default new Vuex.Store({
     memos: []
   },
   getters: {
+    getCount: (state) => {
+      return state.memos.length
+    }
   },
   mutations: {
     save (state, newMemo) {

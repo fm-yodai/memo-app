@@ -23,7 +23,7 @@ export default {
       return this.$store.state.memos
     },
     hasMemos () {
-      return this.$store.state.memos.length
+      return this.$store.getters.getCount
     }
   }
 }
