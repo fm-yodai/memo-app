@@ -4,7 +4,7 @@
       <p>{{ memos.length }} memos here</p>
       <ul>
         <li v-for="memo in memos" :key="memo.id">
-          {{ memo.title }}
+          <router-link :to="{ name: 'edit', params: { id: memo.id } }">{{ memo.title }}</router-link>
         </li>
       </ul>
     </div>

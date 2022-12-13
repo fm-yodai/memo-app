@@ -10,7 +10,10 @@ export default new Vuex.Store({
   },
   getters: {
     getCount: (state) => {
-      return state.memos.length
+      return state.count
+    },
+    getMemoById: (state) => (id) => {
+      return state.memos.find(memo => memo.id === id)
     }
   },
   mutations: {
