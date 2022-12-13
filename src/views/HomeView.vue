@@ -1,10 +1,17 @@
 <template>
   <div class="home">
-    <ul>
-      <li v-for="memo in memos" :key="memo.id">
-        {{ memo.title }}
-      </li>
-    </ul>
+    <div v-if="hasMemos">
+      <p>{{ memos.length }} memos here</p>
+      <ul>
+        <li v-for="memo in memos" :key="memo.id">
+          {{ memo.title }}
+        </li>
+      </ul>
+    </div>
+    <div v-else>
+      <p>No Memo<br>
+        Go <router-link to="/new">'New memo'</router-link> to add new memo</p>
+    </div>
   </div>
 </template>
 
@@ -14,6 +21,9 @@ export default {
   computed: {
     memos () {
       return this.$store.state.memos
+    },
+    hasMemos () {
+      return this.$store.state.memos.length
     }
   }
 }
